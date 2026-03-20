@@ -7,53 +7,47 @@
   <meta name="description" content="EntheoGen Plant Medicine Interaction Guide. Learn how to use the EntheoGen web app.">
   <meta name="keywords" content="EntheoGen, guide, plant medicine, interaction, harm reduction, web app">
   <link rel="canonical" href="https://www.entheogen.azurewebsites.net/public/guide.html">
-  <style>
-    body { font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
-           max-width: 900px; margin: 0 auto; padding: 1.5rem; line-height: 1.6; }
-    header { margin-bottom: 1.5rem; }
-    h1 { margin: 0; color: #1a5f3a; }
-    nav a { margin-right: 1rem; text-decoration: none; color: #1a5f3a; }
-    nav a:hover { text-decoration: underline; }
-    .guide-image-container { text-align: center; margin-top: 2rem; }
-    .guide-image { max-width: 100%; height: auto; display: block; margin: 0 auto; }
-    .download-link { display: block; text-align: center; margin-top: 1.5rem; font-size: 1.1rem; color: #1a5f3a; text-decoration: none; font-weight: 500; }
-    .download-link:hover { text-decoration: underline; }
-    footer { margin-top: 2rem; font-size: 0.8rem; color: #777; border-top: 1px solid #eee; padding-top: 1rem; }
-    @media (orientation: landscape) and (max-width: 900px) {
-      .guide-image { max-height: 80vh; width: auto; }
-    }
-    @media (max-width: 600px) { body { padding: 1rem; } }
-  </style>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header>
-    <h1>EntheoGen</h1>
-    <nav>
-      <a href="/public/">Home</a>
-      <a href="/public/about.html">About</a>
-      <a href="/public/sponsorship.html">Sponsorship</a>
-      <a href="/public/contact.html">Contact</a>
-      <a href="/public/guide.html">Guide</a>
-      <a href="/public/manifesto.html">Manifesto</a>
-    </nav>
-  </header>
+  <div class="eg-app-shell">
+    <header>
+      <h1 class="eg-h1">EntheoGen</h1>
+      <nav class="eg-nav">
+        <a href="/public/" class="eg-nav-link">Home</a>
+        <a href="/public/about.html" class="eg-nav-link">About</a>
+        <a href="/public/sponsorship.html" class="eg-nav-link">Sponsorship</a>
+        <a href="/public/contact.html" class="eg-nav-link">Contact</a>
+        <a href="/public/guide.html" class="eg-nav-link active">Guide</a>
+        <a href="/public/manifesto.html" class="eg-nav-link">Manifesto</a>
+      </nav>
+    </header>
 
-  <h2>EntheoGen Plant Medicine Interaction Guide</h2>
+    <main>
+      <h2 class="eg-h2">EntheoGen Plant Medicine Interaction Guide</h2>
 
-  <div class="guide-image-container">
-    <img src="https://storage.googleapis.com/psychai_bucket_1/entheogen/entheogen-flyer-guide.jpg" 
-         alt="EntheoGen Plant Medicine Interaction Guide" 
-         class="guide-image" 
-         loading="lazy">
+      <div class="eg-card">
+        <div class="eg-guide-image-container">
+          <img src="https://storage.googleapis.com/psychai_bucket_1/entheogen/entheogen-flyer-guide.jpg" 
+               alt="EntheoGen Plant Medicine Interaction Guide" 
+               class="eg-guide-image" 
+               loading="lazy">
+        </div>
+      </div>
+
+      <div class="eg-card">
+        <a href="https://storage.googleapis.com/psychai_bucket_1/entheogen/entheogen-flyer-guide.pdf" 
+           class="eg-download-link" 
+           target="_blank" 
+           rel="noopener">
+          Download .pdf version
+        </a>
+      </div>
+    </main>
+
+    <footer class="eg-footer">
+      EntheoGen · Guide · University of Exeter · This site provides information only and does not constitute medical advice.
+    </footer>
   </div>
-
-  <a href="https://storage.googleapis.com/psychai_bucket_1/entheogen/entheogen-flyer-guide.pdf" 
-     class="download-link" 
-     target="_blank" 
-     rel="noopener">Download .pdf version</a>
-
-  <footer>
-    EntheoGen · Guide · University of Exeter · This site provides information only and does not constitute medical advice.
-  </footer>
 </body>
 </html>

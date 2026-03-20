@@ -12,98 +12,80 @@
   <meta property="og:type" content="website">
   <meta name="twitter:card" content="summary">
   <link rel="canonical" href="https://www.entheogen.azurewebsites.net/public/">
-  <style>
-    body { font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
-           max-width: 900px; margin: 0 auto; padding: 1.5rem; line-height: 1.6; }
-    header { margin-bottom: 1.5rem; }
-    h1 { margin: 0; color: #1a5f3a; }
-    nav a { margin-right: 1rem; text-decoration: none; color: #515a55; }
-    nav a:hover { text-decoration: underline; }
-    .tagline { margin: 0.5rem 0 1rem; color: #333; }
-    .card { border: 1px solid #e0e0e0; border-radius: 8px; padding: 1rem; margin-bottom: 1rem; }
-    .pill { display: inline-block; padding: 0.15rem 0.5rem; border-radius: 999px;
-            font-size: 0.75rem; background: #e8f5e9; color: #1a5f3a; margin-right: 0.25rem; }
-    button, .button-link { display: inline-block; padding: 0.75rem 1.25rem;
-            border-radius: 4px; border: none; cursor: pointer;
-            background: #1a5f3a; color: #fff; text-decoration: none; font-size: 0.95rem; }
-    button:hover, .button-link:hover { background: #174f31; }
-    input[type="email"] { padding: 0.6rem 0.7rem; border-radius: 4px;
-            border: 1px solid #ccc; width: 100%; max-width: 260px; box-sizing: border-box; }
-    .small { font-size: 0.85rem; color: #666; }
-    footer { margin-top: 2rem; font-size: 0.8rem; color: #777; border-top: 1px solid #eee; padding-top: 1rem; }
-    @media (max-width: 600px) {
-      body { padding: 1rem; }
-      nav a { display: inline-block; margin-bottom: 0.3rem; }
-    }
-  </style>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header>
-    <h1>EntheoGen</h1>
-    <p class="tagline">
-      Harm‑reduction interaction database for ceremonial, underground, and psychonautic psychedelic use.
-    </p>
-    <nav>
-      <a href="/public/">Home</a>
-      <a href="/public/about.html">About</a>
-      <a href="/public/sponsorship.html">Sponsorship</a>
-      <a href="/public/contact.html">Contact</a>
-      <a href="/public/guide.html">Guide</a>
-      <a href="/public/manifesto.html">Manifesto</a>
-    </nav>
-  </header>
+  <div class="eg-app-shell">
+    <header>
+      <h1 class="eg-h1">EntheoGen</h1>
+      <p class="eg-body">
+        Harm‑reduction interaction database for ceremonial, underground, and psychonautic psychedelic use.
+      </p>
+      <nav class="eg-nav">
+        <a href="/public/" class="eg-nav-link active">Home</a>
+        <a href="/public/about.html" class="eg-nav-link">About</a>
+        <a href="/public/sponsorship.html" class="eg-nav-link">Sponsorship</a>
+        <a href="/public/contact.html" class="eg-nav-link">Contact</a>
+        <a href="/public/guide.html" class="eg-nav-link">Guide</a>
+        <a href="/public/manifesto.html" class="eg-nav-link">Manifesto</a>
+      </nav>
+    </header>
 
-  <section class="card">
-    <h2>Private Beta · University of Exeter</h2>
-    <p>
-      EntheoGen focuses on how entheogens, medications, and other psychoactive substances interact in
-      real‑world ceremonial, clinical, and intentional use – not generic “recreational drug” summaries.
-    </p>
-    <p>
-      We grade each interaction by <strong>risk</strong>, <strong>mechanism</strong>, and
-      <strong>evidence tier</strong>, to support facilitators, clinicians, and informed users in
-      making safer decisions.
-    </p>
-    <p>
-      <span class="pill">Harm reduction</span>
-      <span class="pill">Evidence‑graded</span>
-      <span class="pill">Ceremonial contexts</span>
-    </p>
-  </section>
+    <main>
+      <div class="eg-card">
+        <h2 class="eg-h2">Private Beta · University of Exeter</h2>
+        <p class="eg-body">
+          EntheoGen focuses on how entheogens, medications, and other psychoactive substances interact in
+          real‑world ceremonial, clinical, and intentional use – not generic "recreational drug" summaries.
+        </p>
+        <p class="eg-body">
+          We grade each interaction by <strong>risk</strong>, <strong>mechanism</strong>, and
+          <strong>evidence tier</strong>, to support facilitators, clinicians, and informed users in
+          making safer decisions.
+        </p>
+        <div class="eg-pill-container">
+          <span class="eg-pill">Harm reduction</span>
+          <span class="eg-pill">Evidence‑graded</span>
+          <span class="eg-pill">Ceremonial contexts</span>
+        </div>
+      </div>
 
-  <section class="card">
-    <h3>Join the beta waitlist</h3>
-    <p>
-      If you’re a student, researcher, clinician, facilitator, or informed psychonaut and would like
-      to collaborate or test the app, share your email and we’ll follow up with details.
-    </p>
-    <form action="https://forms.office.com/your-form-endpoint" method="get" target="_blank">
-      <!-- Replace the action URL with your actual Microsoft Forms / Qualtrics link -->
-      <input type="email" name="email" placeholder="your.name@exeter.ac.uk" required>
-      <br><br>
-      <button type="submit">Register interest</button>
-    </form>
-    <p class="small">
-      We’ll only use your email to contact you about EntheoGen beta testing and related research.
-    </p>
-  </section>
+      <div class="eg-card">
+        <h3 class="eg-h3">Join the beta waitlist</h3>
+        <p class="eg-body">
+          If you're a student, researcher, clinician, facilitator, or informed psychonaut and would like
+          to collaborate or test the app, share your email and we'll follow up with details.
+        </p>
+        <form action="https://forms.office.com/your-form-endpoint" method="get" target="_blank">
+          <!-- Replace the action URL with your actual Microsoft Forms / Qualtrics link -->
+          <input type="email" name="email" placeholder="your.name@exeter.ac.uk" required class="eg-input">
+          <div class="eg-form-container">
+            <button type="submit" class="eg-button">Register interest</button>
+          </div>
+        </form>
+        <p class="eg-small">
+          We'll only use your email to contact you about EntheoGen beta testing and related research.
+        </p>
+      </div>
 
-  <section class="card">
-    <h3>Key documents</h3>
-    <p>
-      <a class="button-link" href="https://github.com/chaosste/EntheoGen" target="_blank" rel="noopener">
-        View project on GitHub
-      </a>
-    </p>
-    <p class="small">
-      Manifesto, team roles, and interaction schema are available in the repository for potential
-      collaborators, supervisors, and sponsors.
-    </p>
-  </section>
+      <div class="eg-card">
+        <h3 class="eg-h3">Key documents</h3>
+        <p class="eg-body">
+          <a href="https://github.com/chaosste/EntheoGen" target="_blank" rel="noopener" class="eg-button">
+            View project on GitHub
+          </a>
+        </p>
+        <p class="eg-small">
+          Manifesto, team roles, and interaction schema are available in the repository for potential
+          collaborators, supervisors, and sponsors.
+        </p>
+      </div>
+    </main>
 
-  <footer>
-    EntheoGen · MSc project, University of Exeter · Hosted on Microsoft Azure App Service<br>
-    This site provides information only and does not constitute medical advice.
-  </footer>
+    <footer class="eg-footer">
+      EntheoGen · MSc project, University of Exeter · Hosted on Microsoft Azure App Service<br>
+      This site provides information only and does not constitute medical advice.
+    </footer>
+  </div>
 </body>
 </html>
