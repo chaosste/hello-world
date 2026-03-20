@@ -1,38 +1,42 @@
 {
   "routes": [
     {
-      "route": "/",
+      "route": "/public/",
       "serve": "/index.html",
       "headers": {
         "Cache-Control": "no-cache, no-store, must-revalidate"
       }
     },
     {
-      "route": "/index.html",
+      "route": "/public/index.html",
       "headers": {
         "Cache-Control": "no-cache, no-store, must-revalidate"
       }
     },
     {
-      "route": "/about.html",
+      "route": "/public/about.html",
+      "serve": "/about.html",
       "headers": {
         "Cache-Control": "max-age=86400"
       }
     },
     {
-      "route": "/sponsorship.html",
+      "route": "/public/sponsorship.html",
+      "serve": "/sponsorship.html",
       "headers": {
         "Cache-Control": "max-age=86400"
       }
     },
     {
-      "route": "/contact.html",
+      "route": "/public/contact.html",
+      "serve": "/contact.html",
       "headers": {
         "Cache-Control": "max-age=86400"
       }
     },
     {
-      "route": "/guide.html",
+      "route": "/public/guide.html",
+      "serve": "/guide.html",
       "headers": {
         "Cache-Control": "max-age=86400"
       }
