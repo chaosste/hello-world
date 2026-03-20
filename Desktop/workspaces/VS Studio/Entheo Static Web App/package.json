@@ -1,0 +1,23 @@
+{
+  "name": "entheogen-static-web-app",
+  "version": "1.0.0",
+  "description": "EntheoGen Static Web App - Psychedelic Harm Reduction Interaction Database",
+  "main": "index.html",
+  "scripts": {
+    "dev": "serve -s . -l 8000",
+    "build": "echo 'Static site - no build needed'",
+    "start": "serve -s . -l 8000"
+  },
+  "keywords": [
+    "entheogen",
+    "psychedelic",
+    "harm-reduction",
+    "drug-interactions",
+    "static-site"
+  ],
+  "author": "Steve Beale, University of Exeter",
+  "license": "MIT",
+  "devDependencies": {
+    "serve": "^14.2.1"
+  }
+}
