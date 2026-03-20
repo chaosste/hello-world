@@ -1,0 +1,30 @@
+# Azure Static Web Apps deployment pipeline
+name: Deploy EntheoGen Static Web App
+
+trigger:
+  branches:
+    include:
+      - main
+      - master
+
+variables:
+  - group: azure-static-web-apps
+
+jobs:
+- job: build_and_deploy
+  displayName: Build and Deploy
+  pool:
+    vmImage: ubuntu-latest
+  steps:
+  - checkout: self
+    submodules: true
+
+  - task: AzureStaticWebApp@0
+    inputs:
+      app_location: '/'
+      api_location: ''
+      output_location: ''
+      azure_static_web_apps_api_token: $(deployment_token)
+      skip_app_build: true
+      skip_api_build: true
+      is_static_export: true
